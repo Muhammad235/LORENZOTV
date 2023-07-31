@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+* button{
+    min-width: 18rem;
+}
+
+/*All header styles starts here below*/
+header button::before,
+header button::after{
+    content: "";
+    display: block;
+    background-color: white;
+    width: 2.1rem;
+    height: 0.2rem;
+    transition: transform 0.3s;
+}
+header button::after{
+    width: 1.8rem;
+}
+header button .toggle-bar{
+    height: 0.2rem;
+    margin: .4rem 0;
+    transition: transform 0.3s;
+}
+header input:checked ~ button .toggle-bar{
+    transform: scale(0);
+}
+header input:checked ~ button::before{
+    width: 2rem;
+    transform: rotate(-45deg) translate(-5px, 10px);
+   
+}
+header input:checked ~ button::after{
+    transform: rotate(45deg) translate(-5px, -10px);
+    width: 2rem;
+}
+header nav {
+    transform: translateX(100%);
+    transition: all 1s;
+   
+}
+header input:checked ~ nav{
+    display: block;
+    transform: translateX(0%);
+    
+}
+header nav ul li:nth-child(2){
+    border-bottom: 1px solid white;
+}
+header nav ul li{
+    border-bottom: 1px solid transparent;
+    padding: .2rem 0;
+    transition: .5s;
+}
+header nav ul li:hover{
+    border-bottom: 1px solid white;
+}
+@media only screen and (min-width: 768px){
+    header nav {
+        transform: translateX(0%);
+        transition: all 1s;
+       
+    }
+    header nav ul li{
+        border: 1px solid transparent;
+        padding: .2rem 1rem;
+    }
+}
+/*All header styles ends above*/
+
+.section1{ /*This is the hero section*/
+    background: url(assets/images/bg-main.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.what-we-offer .content .card{
+    box-shadow: 0 0 10px gray;
+    max-height: 22rem;
+}
+.what-we-offer .content .card .card-content p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*Below styles are for frequently asked questions*/
+#faq .content{
+    width: 100%;
+}
+.questionbx .question input{
+    opacity: 0;
+    transition: 0.5s
+}
+.questionbx .question input:checked ~ .answer{
+    display: block;
+}
+.questionbx .question input:checked ~ .flex .right i{
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+} /*And frequently asked questions ends here*/
+
+/* See footer hover interactions below*/
+footer .center article li{
+    border-bottom: 2px solid transparent;
+    width: fit-content;
+    transition: border 0.5s;
+}
+footer .center article li:hover{
+    border-bottom: 2px solid white;
+}
+footer .socials ul li{
+    width: 30px;
+    height: 30px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 0.5s;
+}
+footer .socials ul li:hover{
+    border: 2px solid white;
+}
