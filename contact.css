@@ -5,7 +5,7 @@ body{
     background-position: center;
 }
 
-/*All header styles starts here below*/
+/*=== All contact header styles are below and within ===*/
 header button::before,
 header button::after{
     content: "";
@@ -67,28 +67,29 @@ header nav ul li:hover{
         padding: .2rem 1rem;
     }
 }
-/*All header styles ends above*/
+/*=== All contact header styles are above and within ===*/
 
 main form button{
     min-width: 18rem;
 }
 
-/*See form imput syles below*/
+/*=== All contact form styles are below and within ===*/
 main form input,
 main form textarea{
     border: 1.5px solid #D70018;
     border-radius: 5px;
     font-size: 1rem;
     width: 100%;
-    padding: .2rem 1rem;
- 
+    padding: .2rem 1rem; 
+
 }
 
 main form input{
     height: 3rem;
-} /*Form imput syles ends here*/
+} 
+/*=== All contact form styles are above and within ===*/
 
-/*See footer hover interactions below*/
+/*=== All contact footer styles are below and within ===*/
 footer .center article li{
     border-bottom: 2px solid transparent;
     width: fit-content;
@@ -110,3 +111,4 @@ footer .socials ul li{
 footer .socials ul li:hover{
     border: 2px solid white;
 }
+/*=== All contact footer styles are above and within ===*/
