@@ -7,7 +7,7 @@
     min-width: 18rem;
 }
 
-/*All header styles starts here below*/
+/*=== All home header styles are below and within ===*/
 header button::before,
 header button::after{
     content: "";
@@ -69,7 +69,7 @@ header nav ul li:hover{
         padding: .2rem 1rem;
     }
 }
-/*All header styles ends above*/
+/*=== All home header styles are above and within ===*/
 
 .section1{ /*This is the hero section*/
     background: url(assets/images/bg-main.jpg);
@@ -89,7 +89,7 @@ header nav ul li:hover{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-/*Below styles are for frequently asked questions*/
+/*=== All home faq styles are below and within ===*/
 #faq .content{
     width: 100%;
 }
@@ -103,9 +103,10 @@ header nav ul li:hover{
 .questionbx .question input:checked ~ .flex .right i{
     transform: rotate(-90deg);
     transition: transform 0.3s;
-} /*And frequently asked questions ends here*/
+} 
+/*=== All home faqstyles are above and within ===*/
 
-/* See footer hover interactions below*/
+/*=== All home footer styles are below and within ===*/
 footer .center article li{
     border-bottom: 2px solid transparent;
     width: fit-content;
@@ -127,3 +128,4 @@ footer .socials ul li{
 footer .socials ul li:hover{
     border: 2px solid white;
 }
+/*=== All home footer styles are above and within ===*/

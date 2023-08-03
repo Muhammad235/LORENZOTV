@@ -8,7 +8,7 @@ body{
     min-width: 18rem;
 }
 
-/*All header styles starts here below*/
+/*=== All services header styles are below and within ===*/
 header button::before,
 header button::after{
     content: "";
@@ -70,9 +70,9 @@ header nav ul li:hover{
         padding: .2rem 1rem;
     }
 }
-/*All header styles ends above*/
+/*=== All services header styles are above and within ===*/
 
-/*See footer hover interactions below*/
+/*=== All services footer styles are below and within ===*/
 footer .center article li{
     border-bottom: 2px solid transparent;
     width: fit-content;
@@ -94,3 +94,4 @@ footer .socials ul li{
 footer .socials ul li:hover{
     border: 2px solid white;
 }
+/*=== All services footer styles are above and within ===*/
