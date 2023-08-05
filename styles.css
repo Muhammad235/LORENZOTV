@@ -96,10 +96,9 @@ header nav ul li:hover{
 /*=== All home header styles are above and within ===*/
 
 .section1{ /*This is the hero section*/
-    background: url(assets/images/bg-main.jpg);
+    background: url(assets/images/bg-main.webp);
     background-position: center;
     background-size: cover;
-    ba
 
 }
 
