@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 
         try {
 
-            $to = "info@lorenzotvmovies.com ";
+            $to = "info@lorenzotvmovies.com";
           
              $subject = "NEW MESSAGE";
      
