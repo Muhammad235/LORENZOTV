@@ -69,6 +69,7 @@ header nav {
 header input:checked ~ nav{
     display: block;
     transform: translateX(0%);
+    z-index: 100;
     
 }
 header nav ul li:nth-child(2){
@@ -103,8 +104,12 @@ header nav ul li:hover{
 }
 
 .what-we-offer .content .card{
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 8px -2px gray;
     max-height: 22rem;
+    transition: transform 0.5s;
+}
+.what-we-offer .content .card:hover{
+    transform: scale(1.1);
 }
 .what-we-offer .content .card .card-content p{
     display: -webkit-box;

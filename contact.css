@@ -43,6 +43,8 @@ header nav {
 header input:checked ~ nav{
     display: block;
     transform: translateX(0%);
+    transition: all 1s;
+    z-index: 10;
     
 }
 header nav ul li{
@@ -56,11 +58,14 @@ header nav ul li:nth-child(5){
 header nav ul li:hover{
     border-bottom: 1px solid white;
 }
+main form label{
+    visibility: hidden;
+}
 @media only screen and (min-width: 768px){
     header nav {
         transform: translateX(0%);
-        transition: all 1s;
-       
+        transition: all 1s; 
+        
     }
     header nav ul li{
         border: 1px solid transparent;

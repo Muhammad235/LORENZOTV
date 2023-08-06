@@ -41,13 +41,35 @@
         <h2 class="text-2xl md:text-4xl md:my-10 mt-20 md:mt-40 text-red-700 font-bold">CONTACT US</h2>
         <h4 class="font-medium md:text-xl px-2">Need to make a complaint or an enquiry enter your details below</h4>
 
-        <form action="#" class="w-full px-4 md:px-40 lg:px-60 my-8 flex flex-col items-center gap-4">
-            <input type="text" name="" id="" placeholder="Full Name">
-            <input type="email" name="" id="" placeholder="Email Address">
-            <input type="number" name="" id="" placeholder="Phone Number">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Describe Message"></textarea>
+        <form action="" onsubmit="formValidation()" class="w-full px-4 md:px-40 lg:px-72 my-8 flex flex-col items-center gap-4">
+            <div class="w-full relative">
+                <input type="text" name="" id="name" placeholder="Full Name">
+                <label for="name" id="namelb" class=" text-red-600 md:text-2xl font-medium flex items-center justify-center gap-2"><p>This field can not be empty</p> <i class="fa-solid fa-circle-exclamation"></i></label> 
+            </div>
+            
 
-            <button class="h-16 mt-12 md:text-xl text-white font-bold bg-red-700 rounded-md hover:bg-red-600">
+            <div class="w-full">
+                <input type="email" name="" id="email" placeholder="Email Address">
+                <label for="email" id="emaillb" class="text-red-600 font-medium flex items-center justify-center gap-2"><p>Invalid email format</p> <i class="fa-solid fa-circle-exclamation"></i></label>
+            </div>
+            
+
+            <div class="w-full relative">
+                <input type="number" name="" id="phone" placeholder="Phone Number">
+
+                <label for="phone" id="phonelb1" class=" text-red-600 font-medium flex items-center justify-center gap-2 absolute"><p>This field can't be empty</p> <i class="fa-solid fa-circle-exclamation"></i></label>
+
+                <label for="phone" id="phonelb2" class=" text-red-600 font-medium mt-0 flex items-center justify-center gap-2 absolute"><p>Phone number can not be shorter or longer than eleven digits</p> <i class="fa-solid fa-circle-exclamation"></i></label>
+            </div>
+            
+            
+            <div class="w-full mt-10">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Describe Message"></textarea>
+                <label for="message" id="messagelb" class="text-red-600 font-medium flex items-center justify-center gap-2"><p>This field can not be empty</p> <i class="fa-solid fa-circle-exclamation"></i></label>
+            </div>
+            
+
+            <button class="h-16 md:text-xl text-white font-bold bg-red-700 rounded-md hover:bg-red-600">
                 Contact Us
             </button>
         </form>
@@ -109,6 +131,9 @@
             </small>
         </div>
     </footer>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
