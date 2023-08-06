@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+    <!-- aos animation css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <title>LORENZO TV</title>
 </head>
@@ -37,30 +41,41 @@
     </header>
     <main class="flex flex-col gap-10">
         <section id="hero"
-            class="section1 flex flex-col justify-end items-center gap-20 md:gap-40 text-white pt-40 md:pt-0 pb-12 md:w-full h-auto md:h-screen">
+            class="section1 flex flex-col justify-end items-center gap-20 md:gap-35 text-white pt-40 md:pt-0 pb-12 md:w-full h-auto md:h-screen">
             <article class="flex flex-col items-center gap-2">
-                <h1 class="text-5xl md:text-7xl font-bold">LORENZO TV</h1>
-                <p class="text-sm md:text-base">YOUR NUMBER ONE MEDIA ENTERTAINMENT TV</p>
-                <button
+                <div id="typed-strings">
+                  <p>LORENZO TV</p>
+                </div>
+            
+                  <span class="text-5xl md:text-7xl font-bold" id="typed"></span>
+       
+                <p class="text-sm md:text-base"data-aos="zoom-in" data-aos-duration="3000">YOUR NUMBER ONE MEDIA AND ENTERTAINMENT TV</p>
+              <a href="contact.html"><button
                     class="h-16 mt-16 md:text-xl text-red-800 font-bold bg-white rounded-md hover:bg-red-600 hover:text-white">
                     Join Us
                 </button>
+             </a>  
             </article>
             <div class="testimonial1 flex flex-col md:flex-row flex-wrap justify-center gap-32">
                 <div class="testimonial1  flex flex-col items-center">
-                    <h3 class="text-2xl font-bold">2000+</h3>
+                    <h3 class="text-2xl font-bold purecounter" data-purecounter-start="0"
+                    data-purecounter-end="200" data-purecounter-duration="5">0</h3>
+
                     <li>Active clients</li>
                 </div>
                 <div class="testimonial1  flex flex-col items-center">
-                    <h3 class="text-2xl font-bold">9500+</h3>
+                    <h3 class="text-2xl font-bold purecounter" data-purecounter-start="0"
+                    data-purecounter-end="300" data-purecounter-duration="5">0</h3>
                     <li>Campaign done</li>
                 </div>
                 <div class="testimonial1  flex flex-col items-center">
-                    <h3 class="text-2xl font-bold">10+</h3>
+                    <h3 class="text-2xl font-bold purecounter" data-purecounter-start="0"
+                    data-purecounter-end="10" data-purecounter-duration="3">0</h3>
                     <li>Team advisers</li>
                 </div>
                 <div class="testimonial1  flex flex-col items-center">
-                    <h3 class="text-2xl font-bold">5+</h3>
+                    <h3 class="text-2xl font-bold purecounter" data-purecounter-start="0"
+                    data-purecounter-end="3" data-purecounter-duration="1">0</h3>
                     <li>Years since existence</li>
                 </div>
             </div>
@@ -72,7 +87,7 @@
                     <h2 class="text-3xl md:text-4xl text-red-700 font-bold">LORENZO TV</h2>
             </header>
             <div
-                class="content max-w-sm px-4 md:px-12 lg:max-w-full flex flex-col lg:flex-row items-center justify-center gap-8 md:gap-20">
+                class="content max-w-sm px-4 md:px-12 lg:max-w-full flex flex-col lg:flex-row items-center justify-center gap-8 md:gap-20"  data-aos="fade-up" data-aos-duration="800">
                 <img src="assets/images/WhatsApp Image.png" alt="section ilustration" class="md:max-w-xs lg:max-w-sm">
                 <div
                     class="right text-center md:text-left flex flex-col items-center md:items-start md:justify-between gap-4 md:gap-8">
@@ -85,9 +100,10 @@
                         help businesses like
                         yours grow more profit by building a wide range of awareness, driving traffic and connecting
                         with paying customers. Talk to us</p>
-                    <button class="h-16 md:text-xl text-white font-bold bg-red-700 rounded-md hover:bg-red-600">
+                    <a href="about.html"><button class="h-16 md:text-xl text-white font-bold bg-red-700 rounded-md hover:bg-red-600">
                         Learn More
                     </button>
+                    </a>
                 </div>
             </div>
 
@@ -101,53 +117,44 @@
 
             <div
                 class="content max-w-sm lg:max-w-full flex flex-wrap flex-col lg:flex-row items-center justify-center gap-8">
-                <div class="card min-h-96 flex flex-1 flex-col items-center gap-5 py-10 rounded-lg">
+                <div class="card min-h-96 flex flex-1 flex-col items-center gap-5 py-10 rounded-lg" data-aos="zoom-out-up" data-aos-duration="800">
                     <img src="assets/images/pie-colored.svg" alt="" class="w-2/5 h-20">
                     <div class="card-content text-center flex flex-col gap-4 items-center px-6 ">
                         <h3 class="font-bold">BUSINESS/BRAND PROMOTION</h3>
                         <P>We help businesses and brands like yours get their business out there and generate more
                             profits.</P>
-                        <button
+                       <a href="services.html"><button
                             class="min-w-max h-10 px-12 text-white font-bold bg-red-800 rounded-md hover:bg-red-600">Learn
                             more</button>
+                        </a> 
                     </div>
                 </div>
 
-                <div class="card  min-h-full flex flex-1 flex-col items-center gap-5 py-10 rounded-lg">
+                <div class="card  min-h-full flex flex-1 flex-col items-center gap-5 py-10 rounded-lg" data-aos="fade-up" data-aos-duration="1200"> 
                     <img src="assets/images/setting-play.svg" alt="" class="w-2/5 h-20">
                     <div class="card-content text-center flex flex-col gap-4 items-center px-6 ">
-                        <h3 class="font-bold">WEB DESIGN &MAINTENANCE</h3>
+                        <h3 class="font-bold">WEB DESIGN & MAINTENANCE</h3>
                         <P>We guarantee you your dream website with our well experienced front and backend developers
                             ready to get your work done realize your dream.</P>
-                        <button
+                        <a href="services.html"><button
                             class="min-w-max h-10 px-12 text-white font-bold bg-red-800 rounded-md hover:bg-red-600">Learn
                             more</button>
+                        </a>
                     </div>
                 </div>
 
-                <div class="card flex flex-1 flex-col items-center gap-5 py-10 rounded-lg">
+                <div class="card flex flex-1 flex-col items-center gap-5 py-10 rounded-lg" data-aos="fade-up" data-aos-duration="1400">
                     <img src="assets/images/video-play.svg" alt="" class="w-2/5 h-20">
                     <div class="card-content text-center flex flex-col gap-4 items-center px-6 ">
                         <h3 class="font-bold">MOVIE BLOCKBUSTERS</h3>
-                        <P>We provide you with the latest movies, cartoons, drama, anime, series of your choice. for
-                            movies!!</P>
-                        <button
+                        <P>We provide you with the latest movies, cartoons, drama, anime, series of your choice. for movies!!</P>
+                        <a href="services.html"><button
                             class="min-w-max h-10 px-12 text-white font-bold bg-red-800 rounded-md hover:bg-red-600">Learn
                             more</button>
+                        </a>
                     </div>
                 </div>
 
-                <div class="card flex flex-1 flex-col items-center gap-5 py-10 rounded-lg">
-                    <img src="assets/images/video-play.svg" alt="" class="w-2/5 h-20">
-                    <div class="card-content text-center flex flex-col gap-4 items-center px-6 ">
-                        <h3 class="font-bold">MOVIE BLOCKBUSTERS</h3>
-                        <P>We provide you with the latest movies, cartoons, drama, anime, series of your choice. for
-                            movies!!</P>
-                        <button
-                            class="min-w-max h-10 px-12 text-white font-bold bg-red-800 rounded-md hover:bg-red-600">Learn
-                            more</button>
-                    </div>
-                </div>
             </div>
             </div>
 
@@ -157,22 +164,23 @@
             <section id="services" class="what-we-offer flex flex-col items-center gap-16 p-8 md:px-32 ">
                 <header class="flex flex-col items-center gap-1">
                     <h3 class="text-xl font-semibold">Who We Are</h3>
-                    <h2 class="text-3xl md:text-4xl text-red-700 font-bold">OUR VALUES</h2>
+                    <h2 class="text-3xl md:text-4xl text-red-700 font-bold" >OUR VALUES</h2>
                 </header>
                 <div
                     class="content max-w-sm lg:max-w-full flex flex-col lg:flex-row lg:justify-between items-center justify-center gap-16 md:gap-10 lg:gap-52">
                     <div class="flex flex-col items-center gap-1">
-                        <img src="assets/images/badge1.svg" alt="" class="w-2/5 md:w-3/4">
+                        <img src="assets/images/badge1.svg" alt="" class="w-2/5 md:w-3/4" data-aos="flip-down" data-aos-duration="600">
                         <p class="font-bold">Transparency</p>
                     </div>
 
                     <div class="flex flex-col items-center gap-1">
-                        <img src="assets/images/badge2.svg" alt="" class="w-2/5 md:w-3/4">
+                        <img src="assets/images/badge2.svg" alt="" class="w-2/5 md:w-3/4" data-aos="fade-up"
+                        data-aos-anchor-placement="center-center" data-aos-duration="500">
                         <p class="font-bold">Authenticity</p>
                     </div>
 
                     <div class="flex flex-col items-center gap-1">
-                        <img src="assets/images/badge3.svg" alt="" class="w-2/5 md:w-3/4">
+                        <img src="assets/images/badge3.svg" alt="" class="w-2/5 md:w-3/4" data-aos="flip-left" data-aos-duration="600"> 
                         <p class="font-bold">Simplicity</p>
                     </div>
 
@@ -338,6 +346,11 @@
                 </div>
             </section>
     </main>
+
+
+</body>
+
+
     
     <footer
         class="text-left bg-red-700 text-white w-full p-8 md:px-12 lg:px-40 mt-20 flex flex-col items-center gap-10">
@@ -379,10 +392,10 @@
             <div class="socials flex flex-col gap-8">
                 <h3 class="font-medium">Socials</h3>
                 <ul class="flex gap-3 -ml-2">
-                    <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/lorenzarts12"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://instagram.com/lorenzotvhq?igshid=MzNlNGNkZWQ4Mg=="><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/lorenzotvhq?t=35a-I6Vh5S11PHI8dWL--Q&s=09"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://wa.me//2347032544294"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -464,30 +477,28 @@
 
 
 
+<!-- Pure Counter js Library -->
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
 <!-- jquery Library -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<script>
+<!-- Typed js Library -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-    // -----------------preloader-----------------------
-    // $(window).on("load", function (){
-    //     $(".preloader").fadeOut("slow")
-    // });
+<!-- Aos animation Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Main javascript -->
+<script src="js/main.js"></script>
 
 
-        document.addEventListener("DOMContentLoaded", function () {
-        // Get the preloader element
-        var preloader = document.querySelector("#preloader");
-        
-        // Fade out the preloader
-        preloader.style.transition = "opacity 4s";
-        preloader.style.opacity = "0.5";
 
         // Hide the preloader after the fade-out
         setTimeout(function() {
             preloader.style.display = "none";
         }, 1800); 
-    });
+    
 
 </script>
  
