@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 * button{
-    min-width: 18rem;
+    min-width: 16rem;
 }
 
 
@@ -17,7 +17,7 @@
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background-color: red;
+    background-color: #D70018;
   }
   
   svg {
