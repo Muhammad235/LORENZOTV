@@ -46,6 +46,7 @@ header nav {
 header input:checked ~ nav{
     display: block;
     transform: translateX(0%);
+    z-index: 1;
     
 }
 header nav ul li{
@@ -69,6 +70,9 @@ header nav ul li:hover{
         border: 1px solid transparent;
         padding: .2rem 1rem;
     }
+    /* header nav ul li:hover{
+        border-bottom: 1px solid red;
+    } */
 }
 /*=== All services header styles are above and within ===*/
 

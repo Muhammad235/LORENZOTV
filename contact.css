@@ -1,10 +1,21 @@
+
 body{
     background: url(assets/images/bg-main2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
+.fade-in-element {
+    opacity: 0;
+    transition: 3s; /* Transition over 1 second */
+    transform: translateY(100px);
+  }
+  
+  .fade-in-element.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 /*=== All contact header styles are below and within ===*/
 header button::before,
 header button::after{

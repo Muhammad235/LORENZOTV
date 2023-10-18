@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ee600e9388.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
@@ -69,7 +70,7 @@
             </div>
             
 
-            <button class="h-16 md:text-xl text-white font-bold bg-red-700 rounded-md hover:bg-red-600">
+            <button class="h-16 md:text-xl text-white font-bold bg-red-700 rounded-md hover:bg-red-600" data-aos="fade-up" data-aos-duration="800">
                 Contact Us
             </button>
         </form>
@@ -132,8 +133,15 @@
         </div>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
     <script src="script.js"></script>
+    <script>
+        AOS.init({
+          duration: 100, // Duration of animations in milliseconds
+        });
+      </script>
+    
 </body>
 
 </html>

@@ -102,7 +102,9 @@ header nav ul li:hover{
     background-size: cover;
 
 }
-
+/* #hero article #typed-strings .text-base{
+    font-size: .5rem;
+} */
 .what-we-offer .content .card{
     box-shadow: 0 0 8px -2px gray;
     max-height: 22rem;
