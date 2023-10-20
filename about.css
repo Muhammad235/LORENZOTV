@@ -42,6 +42,7 @@ header input:checked ~ button::after{
 header nav {
     transform: translateX(100%);
     transition: all 1s;
+    z-index: 1;
    
 }
 header input:checked ~ nav{
